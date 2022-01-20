@@ -1,1 +1,1 @@
-template
+Template клиентская часть
