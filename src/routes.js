@@ -1,13 +1,26 @@
 import {
   MAIN_ROUTE,
-  COMPONENT_1_ROUTE,
-  COMPONENT_2_ROUTE,
-  COMPONENT_3_ROUTE,
+  NEWS_ROUTE,
+  ONE_NEWS_ROUTE,
+  TARIFFS_ROUTE,
+  AGREEMENT_ROUTE,
+  DOCUMENTS_ROUTE,
+  CONTACTS_ROUTE,
+  LOGIN_ROUTE,
+  ADMIN_ROUTE,
+  PERSONAL_AREA_ROUTE,
 } from './utils/const'
-import Component1 from './pages/Component_1'
-import Component2 from './pages/Component_2'
-import Component3 from './pages/Component_3'
+
 import Main from './pages/Main'
+import News from './pages/News'
+import OneNews from './pages/OneNews'
+import Tariffs from './pages/Tariffs'
+import Agreement from './pages/Agreement'
+import Documents from './pages/Documents'
+import Contacts from './pages/Contacts'
+import Login from './pages/Login'
+import Admin from './pages/Admin'
+import PersonalArea from './pages/PersonalArea'
 
 export const publicRoutes = [
   {
@@ -15,15 +28,51 @@ export const publicRoutes = [
     element: <Main />,
   },
   {
-    path: COMPONENT_1_ROUTE,
-    element: <Component1 />,
+    path: NEWS_ROUTE,
+    element: <News />,
   },
   {
-    path: COMPONENT_2_ROUTE,
-    element: <Component2 />,
+    path: ONE_NEWS_ROUTE,
+    element: <OneNews />,
   },
   {
-    path: COMPONENT_3_ROUTE,
-    element: <Component3 />,
+    path: TARIFFS_ROUTE,
+    element: <Tariffs />,
   },
+  {
+    path: AGREEMENT_ROUTE,
+    element: <Agreement />,
+  },
+  {
+    path: DOCUMENTS_ROUTE,
+    element: <Documents />,
+  },
+  {
+    path: CONTACTS_ROUTE,
+    element: <Contacts />,
+  },
+  {
+    path: LOGIN_ROUTE,
+    element: <Login />,
+  },
+]
+
+export const authRotes = [
+  {
+    path: ADMIN_ROUTE,
+    element: <Admin />,
+  },
+  {
+    path: PERSONAL_AREA_ROUTE,
+    element: <PersonalArea />,
+  },
+]
+
+export const navbarInfo = [
+  {path: MAIN_ROUTE, name: 'Головна'},
+  {path: NEWS_ROUTE, name: 'Новини'},
+  {path: TARIFFS_ROUTE, name: 'Тарифи'},
+  {path: AGREEMENT_ROUTE, name: 'Договір'},
+  {path: DOCUMENTS_ROUTE, name: 'Документи'},
+  {path: CONTACTS_ROUTE, name: 'Контакти'},
 ]
